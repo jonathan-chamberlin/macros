@@ -1,11 +1,5 @@
 #Requires AutoHotkey v2.0
 
-; Notion Hotkeys for Comet Browser
-; Win+1 = Next Actions
-; Win+2 = Calendar
-; Win+3 = In Tray
-; Win+4 = Second Brain
-
 CometPath := "C:\Users\Jonathan Chamberlin\AppData\Local\Perplexity\Comet\Application\comet.exe"
 
 OpenInComet(url) {
@@ -24,8 +18,6 @@ OpenInComet(url) {
 #3::OpenInComet("https://www.notion.so/jchamberlin/In-Tray-148afe0dcf0380579f65fa17c5be51da")
 #4::OpenInComet("https://www.notion.so/jchamberlin/Second-Brain-3-6e70047fb94245eb87d3761cf3cd2855")
 
-; File Explorer
-; Win+5 = Downloads + Repos for Git (two tabs in one window)
 #5::{
     existingWindows := WinGetList("ahk_class CabinetWClass")
     Run 'explorer.exe "C:\Users\Jonathan Chamberlin\Downloads"'
