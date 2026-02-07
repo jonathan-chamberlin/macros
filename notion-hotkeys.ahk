@@ -1,10 +1,10 @@
 #Requires AutoHotkey v2.0
 
 ; Notion Hotkeys for Comet Browser
-; Win+1 = Second Brain
-; Win+2 = Next Actions
+; Win+1 = Next Actions
+; Win+2 = Calendar
 ; Win+3 = In Tray
-; Win+4 = Calendar
+; Win+4 = Second Brain
 
 CometPath := "C:\Users\Jonathan Chamberlin\AppData\Local\Perplexity\Comet\Application\comet.exe"
 
@@ -19,7 +19,7 @@ OpenInComet(url) {
     }
 }
 
-#1::OpenInComet("https://www.notion.so/jchamberlin/Second-Brain-3-6e70047fb94245eb87d3761cf3cd2855")
-#2::OpenInComet("https://www.notion.so/jchamberlin/Next-Actions-14eafe0dcf0380318975d9ef2d2a6368?pvs=32")
+#1::OpenInComet("https://www.notion.so/jchamberlin/Next-Actions-14eafe0dcf0380318975d9ef2d2a6368?pvs=32")
+#2::OpenInComet("https://calendar.notion.so/")
 #3::OpenInComet("https://www.notion.so/jchamberlin/In-Tray-148afe0dcf0380579f65fa17c5be51da")
-#4::OpenInComet("https://calendar.notion.so/")
+#4::OpenInComet("https://www.notion.so/jchamberlin/Second-Brain-3-6e70047fb94245eb87d3761cf3cd2855")

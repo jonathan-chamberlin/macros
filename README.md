@@ -8,10 +8,10 @@ Opens Notion pages in Comet browser. Launches Comet if not already running.
 
 | Hotkey | Page |
 |--------|------|
-| `Win+1` | Second Brain |
-| `Win+2` | Next Actions |
+| `Win+1` | Next Actions |
+| `Win+2` | Calendar |
 | `Win+3` | In Tray |
-| `Win+4` | Calendar |
+| `Win+4` | Second Brain |
 
 ### Setup
 
