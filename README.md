@@ -15,6 +15,14 @@ Runs automatically on Windows startup.
 | `Win+3` | In Tray |
 | `Win+4` | Second Brain |
 
+## File Explorer
+
+Opens a File Explorer window with two tabs: Downloads and Repositories for Git.
+
+| Hotkey | Action |
+|--------|--------|
+| `Win+5` | Downloads + Repos for Git |
+
 ### Setup
 
 1. Install [AutoHotkey v2](https://www.autohotkey.com/)
