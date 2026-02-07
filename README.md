@@ -4,7 +4,9 @@ AutoHotkey macros for Windows productivity.
 
 ## Notion Hotkeys
 
-Opens Notion pages in Comet browser. Launches Comet if not already running.
+Opens Notion pages in Comet browser. If a Comet instance is already open on the current desktop, the page opens as a new tab there. Otherwise, it launches Comet first then opens the page.
+
+Runs automatically on Windows startup.
 
 | Hotkey | Page |
 |--------|------|
