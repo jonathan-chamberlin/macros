@@ -1,12 +1,10 @@
 # Macros
 
-AutoHotkey macros for Windows productivity.
+AutoHotkey macros for Windows productivity. All scripts are launched via `main.ahk`, which runs automatically on Windows startup.
 
 ## Notion Hotkeys
 
 Opens Notion pages in Comet browser. If a Comet instance is already open on the current desktop, the page opens as a new tab there. Otherwise, it launches Comet first then opens the page.
-
-Runs automatically on Windows startup.
 
 | Hotkey | Page |
 |--------|------|
@@ -23,7 +21,15 @@ Opens a File Explorer window with two tabs: Downloads and Repositories for Git.
 |--------|--------|
 | `Win+5` | Downloads + Repos for Git |
 
-### Setup
+## Commit and Push
+
+Types `commit and push` and presses Enter when triggered.
+
+| Trigger | Action |
+|---------|--------|
+| `p` x3 (within 1s) | Types `commit and push` + Enter |
+
+## Setup
 
 1. Install [AutoHotkey v2](https://www.autohotkey.com/)
-2. Double-click `notion-hotkeys.ahk` to run
+2. Double-click `main.ahk` to run (starts all scripts)
