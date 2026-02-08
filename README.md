@@ -29,7 +29,16 @@ Types `commit and push` and presses Enter when triggered.
 |---------|--------|
 | `p` x3 (within 1s) | Types `commit and push` + Enter |
 
+## Git Pull
+
+Types `git pull origin main` and presses Enter when triggered.
+
+| Trigger | Action |
+|---------|--------|
+| `l` x3 (within 1s) | Types `git pull origin main` + Enter |
+
 ## Setup
 
 1. Install [AutoHotkey v2](https://www.autohotkey.com/)
 2. Double-click `main.ahk` to run (starts all scripts)
+
