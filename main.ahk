@@ -2,6 +2,6 @@
 
 ScriptDir := A_ScriptDir
 
-Run ScriptDir "\notion-hotkeys.ahk"
-Run ScriptDir "\explorer-hotkey.ahk"
-Run ScriptDir "\commit-push-macro.ahk"
+Run ScriptDir "\scripts\notion-hotkeys.ahk"
+Run ScriptDir "\scripts\explorer-hotkey.ahk"
+Run ScriptDir "\scripts\commit-push-macro.ahk"
