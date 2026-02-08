@@ -37,6 +37,15 @@ Types `git pull origin main` and presses Enter when triggered.
 |---------|--------|
 | `l` x3 (within 1s) | Types `git pull origin main` + Enter |
 
+## Comet Tab Switching
+
+Switch tabs in Comet browser. Only active when Comet is focused. Does not wrap around at edges.
+
+| Hotkey | Action |
+|--------|--------|
+| `Shift+Left` | Previous tab |
+| `Shift+Right` | Next tab |
+
 ## Setup
 
 1. Install [AutoHotkey v2](https://www.autohotkey.com/)
