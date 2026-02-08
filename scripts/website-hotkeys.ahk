@@ -18,3 +18,4 @@ OpenInComet(url) {
 #2::OpenInComet("https://calendar.notion.so/")
 #3::OpenInComet("https://www.notion.so/jchamberlin/In-Tray-148afe0dcf0380579f65fa17c5be51da")
 #4::OpenInComet("https://www.notion.so/jchamberlin/Second-Brain-3-6e70047fb94245eb87d3761cf3cd2855")
+#6::OpenInComet("https://github.com/jonathan-chamberlin?tab=repositories")

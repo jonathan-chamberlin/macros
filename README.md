@@ -9,6 +9,7 @@ AutoHotkey macros for Windows productivity. All scripts are launched via `main.a
 | `Win+3` | Open In Tray in Comet |
 | `Win+4` | Open Second Brain in Comet |
 | `Win+5` | Explorer: .claude + Downloads + Repos for Git |
+| `Win+6` | Open GitHub Repositories in Comet |
 | `p` x3 (within 1s) | Types `commit and push` + Ctrl+Enter |
 | `l` x4 (within 1s) | Types `git pull origin main` + Enter |
 | `Shift+Left` | Previous tab (Comet only) |
