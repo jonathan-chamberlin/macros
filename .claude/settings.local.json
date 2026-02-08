@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Program Files'',''C:\\\\Program Files \\(x86\\)'' -Recurse -Filter ''comet*'' -ErrorAction SilentlyContinue | Where-Object { $_Extension -eq ''.exe'' } | Select-Object -First 10 FullName\")",
+      "Bash(powershell -Command:*)",
+      "Bash(winget install:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd AutoHotkey macro for opening Notion pages in Comet browser\n\nWin+1-4 hotkeys for Second Brain, Next Actions, In Tray, and Calendar.\nLaunches Comet if not already running.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)",
+      "Bash(powershell -File -:*)",
+      "Bash(for dir in \"C:/Repositories for Git\"/*/)",
+      "Bash(do if [ -d \"$dir/.git\" ])",
+      "Bash(git -C \"$dir\" log --since=\"2026-02-07 06:00\" --format=\"%h %s\" --all)",
+      "Bash(fi)",
+      "Bash(done)"
+    ]
+  }
+}
