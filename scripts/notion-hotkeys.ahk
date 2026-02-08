@@ -1,4 +1,5 @@
 #Requires AutoHotkey v2.0
+#SingleInstance Force
 
 CometPath := "C:\Users\Jonathan Chamberlin\AppData\Local\Perplexity\Comet\Application\comet.exe"
 

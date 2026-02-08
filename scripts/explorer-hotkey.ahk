@@ -1,14 +1,15 @@
 #Requires AutoHotkey v2.0
+#SingleInstance Force
 
 #5::{
     existingWindows := WinGetList("ahk_class CabinetWClass")
-    Run 'explorer.exe "C:\Users\Jonathan Chamberlin\Downloads"'
+    Run 'explorer.exe "C:\Users\Jonathan Chamberlin\.claude"'
     loop {
-        Sleep 200
+        Sleep 50
         currentWindows := WinGetList("ahk_class CabinetWClass")
         if currentWindows.Length > existingWindows.Length
             break
-        if A_Index > 15
+        if A_Index > 60
             return
     }
     newWin := 0
@@ -28,14 +29,18 @@
     if !newWin
         return
     WinActivate(newWin)
-    Sleep 300
+    Sleep 100
     Send "^t"
-    Sleep 800
+    Sleep 250
     Send "!d"
-    Sleep 500
-    Send "^a"
+    Sleep 100
+    SendText "C:\Users\Jonathan Chamberlin\Downloads"
+    Send "{Enter}"
+    Sleep 250
+    Send "^t"
+    Sleep 250
+    Send "!d"
     Sleep 100
     SendText "C:\Repositories for Git"
-    Sleep 200
     Send "{Enter}"
 }
