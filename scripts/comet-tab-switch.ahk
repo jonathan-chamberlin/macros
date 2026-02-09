@@ -2,6 +2,6 @@
 #SingleInstance Force
 
 #HotIf WinActive("ahk_exe comet.exe")
-+Left::Send "^{PgUp}"
-+Right::Send "^{PgDn}"
+RShift & Left::Send "^{PgUp}"
+RShift & Right::Send "^{PgDn}"
 #HotIf

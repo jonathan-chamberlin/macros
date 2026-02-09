@@ -7,6 +7,8 @@ OpenInComet(url) {
     global CometPath
     if ProcessExist("comet.exe") {
         Run '"' CometPath '" "' url '"'
+        WinWait("ahk_exe comet.exe",, 3)
+        WinActivate("ahk_exe comet.exe")
     } else {
         Run '"' CometPath '"'
         Sleep 3000
