@@ -13,9 +13,9 @@
 
     pressCount++
 
-    if (pressCount >= 3 && A_TickCount - firstPressTime <= 1000) {
+    if (pressCount >= 4 && A_TickCount - firstPressTime <= 1000) {
         pressCount := 0
-        Send "{Backspace 3}"
+        Send "{Backspace 4}"
         Sleep 50
         SendText "commit and push"
         Sleep 50
