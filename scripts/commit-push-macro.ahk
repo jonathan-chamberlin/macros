@@ -12,6 +12,14 @@
         return
     }
 
+    ; Reset if any non-p key was pressed between p-presses
+    if (A_PriorKey != "p") {
+        pressCount := 1
+        firstPressTime := A_TickCount
+        KeyWait "p"
+        return
+    }
+
     pressCount++
 
     if (pressCount >= 4 && A_TickCount - firstPressTime <= 1000) {
