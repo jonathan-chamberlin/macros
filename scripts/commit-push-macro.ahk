@@ -8,6 +8,7 @@
     if (pressCount = 0 || A_TickCount - firstPressTime > 1000) {
         pressCount := 1
         firstPressTime := A_TickCount
+        KeyWait "p"
         return
     }
 
@@ -21,4 +22,5 @@
         Sleep 50
         Send "^{Enter}"
     }
+    KeyWait "p"
 }
