@@ -1,0 +1,381 @@
+2026-02-10 00:48:19 === Script started ===
+2026-02-10 00:48:24 --- Key event fired ---
+2026-02-10 00:48:24   pressCount (before logic)=0
+2026-02-10 00:48:24   A_TickCount=291519765
+2026-02-10 00:48:24   firstPressTime=0
+2026-02-10 00:48:24   elapsed=291519781ms
+2026-02-10 00:48:24   A_ThisHotkey=~p
+2026-02-10 00:48:24   A_PriorHotkey=
+2026-02-10 00:48:24   A_TimeSincePriorHotkey=ms
+2026-02-10 00:48:24   -> RESET branch: pressCount was 0, setting to 1
+2026-02-10 00:48:24   -> firstPressTime set to 291519812
+2026-02-10 00:48:24 --- Key event fired ---
+2026-02-10 00:48:24   pressCount (before logic)=1
+2026-02-10 00:48:24   A_TickCount=291519921
+2026-02-10 00:48:24   firstPressTime=291519812
+2026-02-10 00:48:24   elapsed=109ms
+2026-02-10 00:48:24   A_ThisHotkey=~p
+2026-02-10 00:48:24   A_PriorHotkey=~p
+2026-02-10 00:48:24   A_TimeSincePriorHotkey=187ms
+2026-02-10 00:48:24   -> INCREMENT branch: pressCount now=2 elapsed=156ms
+2026-02-10 00:48:24   -> Not triggered yet (need >=5, have 2)
+2026-02-10 00:48:24 --- Key event fired ---
+2026-02-10 00:48:24   pressCount (before logic)=2
+2026-02-10 00:48:24   A_TickCount=291520078
+2026-02-10 00:48:24   firstPressTime=291519812
+2026-02-10 00:48:24   elapsed=266ms
+2026-02-10 00:48:24   A_ThisHotkey=~p
+2026-02-10 00:48:24   A_PriorHotkey=~p
+2026-02-10 00:48:24   A_TimeSincePriorHotkey=203ms
+2026-02-10 00:48:24   -> INCREMENT branch: pressCount now=3 elapsed=313ms
+2026-02-10 00:48:24   -> Not triggered yet (need >=5, have 3)
+2026-02-10 00:48:26 --- Key event fired ---
+2026-02-10 00:48:26   pressCount (before logic)=3
+2026-02-10 00:48:26   A_TickCount=291521812
+2026-02-10 00:48:26   firstPressTime=291519812
+2026-02-10 00:48:26   elapsed=2016ms
+2026-02-10 00:48:26   A_ThisHotkey=~p
+2026-02-10 00:48:26   A_PriorHotkey=~p
+2026-02-10 00:48:26   A_TimeSincePriorHotkey=1781ms
+2026-02-10 00:48:26   -> RESET branch: pressCount was 3, setting to 1
+2026-02-10 00:48:26   -> firstPressTime set to 291521859
+2026-02-10 00:48:26 --- Key event fired ---
+2026-02-10 00:48:26   pressCount (before logic)=1
+2026-02-10 00:48:26   A_TickCount=291521968
+2026-02-10 00:48:26   firstPressTime=291521859
+2026-02-10 00:48:26   elapsed=125ms
+2026-02-10 00:48:26   A_ThisHotkey=~p
+2026-02-10 00:48:26   A_PriorHotkey=~p
+2026-02-10 00:48:26   A_TimeSincePriorHotkey=219ms
+2026-02-10 00:48:26   -> INCREMENT branch: pressCount now=2 elapsed=156ms
+2026-02-10 00:48:26   -> Not triggered yet (need >=5, have 2)
+2026-02-10 00:48:31 --- Key event fired ---
+2026-02-10 00:48:31   pressCount (before logic)=2
+2026-02-10 00:48:31   A_TickCount=291527281
+2026-02-10 00:48:31   firstPressTime=291521859
+2026-02-10 00:48:31   elapsed=5437ms
+2026-02-10 00:48:31   A_ThisHotkey=~p
+2026-02-10 00:48:31   A_PriorHotkey=~p
+2026-02-10 00:48:31   A_TimeSincePriorHotkey=5360ms
+2026-02-10 00:48:31   -> RESET branch: pressCount was 2, setting to 1
+2026-02-10 00:48:31   -> firstPressTime set to 291527328
+2026-02-10 00:48:32 --- Key event fired ---
+2026-02-10 00:48:32   pressCount (before logic)=1
+2026-02-10 00:48:32   A_TickCount=291527453
+2026-02-10 00:48:32   firstPressTime=291527328
+2026-02-10 00:48:32   elapsed=140ms
+2026-02-10 00:48:32   A_ThisHotkey=~p
+2026-02-10 00:48:32   A_PriorHotkey=~p
+2026-02-10 00:48:32   A_TimeSincePriorHotkey=203ms
+2026-02-10 00:48:32   -> INCREMENT branch: pressCount now=2 elapsed=172ms
+2026-02-10 00:48:32   -> Not triggered yet (need >=5, have 2)
+2026-02-10 00:48:32 --- Key event fired ---
+2026-02-10 00:48:32   pressCount (before logic)=2
+2026-02-10 00:48:32   A_TickCount=291527593
+2026-02-10 00:48:32   firstPressTime=291527328
+2026-02-10 00:48:32   elapsed=265ms
+2026-02-10 00:48:32   A_ThisHotkey=~p
+2026-02-10 00:48:32   A_PriorHotkey=~p
+2026-02-10 00:48:32   A_TimeSincePriorHotkey=188ms
+2026-02-10 00:48:32   -> INCREMENT branch: pressCount now=3 elapsed=297ms
+2026-02-10 00:48:32   -> Not triggered yet (need >=5, have 3)
+2026-02-10 00:48:33 --- Key event fired ---
+2026-02-10 00:48:33   pressCount (before logic)=3
+2026-02-10 00:48:33   A_TickCount=291528937
+2026-02-10 00:48:33   firstPressTime=291527328
+2026-02-10 00:48:33   elapsed=1625ms
+2026-02-10 00:48:33   A_ThisHotkey=~p
+2026-02-10 00:48:33   A_PriorHotkey=~p
+2026-02-10 00:48:33   A_TimeSincePriorHotkey=1406ms
+2026-02-10 00:48:33   -> RESET branch: pressCount was 3, setting to 1
+2026-02-10 00:48:33   -> firstPressTime set to 291529000
+2026-02-10 00:48:33 --- Key event fired ---
+2026-02-10 00:48:33   pressCount (before logic)=1
+2026-02-10 00:48:33   A_TickCount=291529125
+2026-02-10 00:48:33   firstPressTime=291529000
+2026-02-10 00:48:33   elapsed=140ms
+2026-02-10 00:48:33   A_ThisHotkey=~p
+2026-02-10 00:48:33   A_PriorHotkey=~p
+2026-02-10 00:48:33   A_TimeSincePriorHotkey=250ms
+2026-02-10 00:48:33   -> INCREMENT branch: pressCount now=2 elapsed=171ms
+2026-02-10 00:48:33   -> Not triggered yet (need >=5, have 2)
+2026-02-10 00:48:33 --- Key event fired ---
+2026-02-10 00:48:33   pressCount (before logic)=2
+2026-02-10 00:48:33   A_TickCount=291529296
+2026-02-10 00:48:33   firstPressTime=291529000
+2026-02-10 00:48:33   elapsed=312ms
+2026-02-10 00:48:33   A_ThisHotkey=~p
+2026-02-10 00:48:33   A_PriorHotkey=~p
+2026-02-10 00:48:33   A_TimeSincePriorHotkey=219ms
+2026-02-10 00:48:33   -> INCREMENT branch: pressCount now=3 elapsed=343ms
+2026-02-10 00:48:33   -> Not triggered yet (need >=5, have 3)
+2026-02-10 00:49:27 --- Key event fired ---
+2026-02-10 00:49:27   pressCount (before logic)=3
+2026-02-10 00:49:27   A_TickCount=291583015
+2026-02-10 00:49:27   firstPressTime=291529000
+2026-02-10 00:49:27   elapsed=54046ms
+2026-02-10 00:49:27   A_ThisHotkey=~p
+2026-02-10 00:49:27   A_PriorHotkey=~p
+2026-02-10 00:49:27   A_TimeSincePriorHotkey=53766ms
+2026-02-10 00:49:27   -> RESET branch: pressCount was 3, setting to 1
+2026-02-10 00:49:27   -> firstPressTime set to 291583062
+2026-02-10 00:49:37 --- Key event fired ---
+2026-02-10 00:49:37   pressCount (before logic)=1
+2026-02-10 00:49:37   A_TickCount=291593109
+2026-02-10 00:49:37   firstPressTime=291583062
+2026-02-10 00:49:37   elapsed=10063ms
+2026-02-10 00:49:37   A_ThisHotkey=~p
+2026-02-10 00:49:37   A_PriorHotkey=~p
+2026-02-10 00:49:37   A_TimeSincePriorHotkey=10125ms
+2026-02-10 00:49:37   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:49:37   -> firstPressTime set to 291593156
+2026-02-10 00:49:49 --- Key event fired ---
+2026-02-10 00:49:49   pressCount (before logic)=1
+2026-02-10 00:49:49   A_TickCount=291604703
+2026-02-10 00:49:49   firstPressTime=291593156
+2026-02-10 00:49:49   elapsed=11578ms
+2026-02-10 00:49:49   A_ThisHotkey=~p
+2026-02-10 00:49:49   A_PriorHotkey=~p
+2026-02-10 00:49:49   A_TimeSincePriorHotkey=11657ms
+2026-02-10 00:49:49   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:49:49   -> firstPressTime set to 291604750
+2026-02-10 00:49:58 --- Key event fired ---
+2026-02-10 00:49:58   pressCount (before logic)=1
+2026-02-10 00:49:58   A_TickCount=291613562
+2026-02-10 00:49:58   firstPressTime=291604750
+2026-02-10 00:49:58   elapsed=8828ms
+2026-02-10 00:49:58   A_ThisHotkey=~p
+2026-02-10 00:49:58   A_PriorHotkey=~p
+2026-02-10 00:49:58   A_TimeSincePriorHotkey=8906ms
+2026-02-10 00:49:58   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:49:58   -> firstPressTime set to 291613609
+2026-02-10 00:52:30 --- Key event fired ---
+2026-02-10 00:52:30   pressCount (before logic)=1
+2026-02-10 00:52:30   A_TickCount=291766031
+2026-02-10 00:52:30   firstPressTime=291613609
+2026-02-10 00:52:30   elapsed=152437ms
+2026-02-10 00:52:30   A_ThisHotkey=~p
+2026-02-10 00:52:30   A_PriorHotkey=~p
+2026-02-10 00:52:30   A_TimeSincePriorHotkey=152500ms
+2026-02-10 00:52:30   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:52:30   -> firstPressTime set to 291766078
+2026-02-10 00:52:37 --- Key event fired ---
+2026-02-10 00:52:37   pressCount (before logic)=1
+2026-02-10 00:52:37   A_TickCount=291772625
+2026-02-10 00:52:37   firstPressTime=291766078
+2026-02-10 00:52:37   elapsed=6562ms
+2026-02-10 00:52:37   A_ThisHotkey=~p
+2026-02-10 00:52:37   A_PriorHotkey=~p
+2026-02-10 00:52:37   A_TimeSincePriorHotkey=6641ms
+2026-02-10 00:52:37   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:52:37   -> firstPressTime set to 291772671
+2026-02-10 00:54:54 --- Key event fired ---
+2026-02-10 00:54:54   pressCount (before logic)=1
+2026-02-10 00:54:54   A_TickCount=291910312
+2026-02-10 00:54:54   firstPressTime=291772671
+2026-02-10 00:54:54   elapsed=137657ms
+2026-02-10 00:54:54   A_ThisHotkey=~p
+2026-02-10 00:54:54   A_PriorHotkey=~p
+2026-02-10 00:54:54   A_TimeSincePriorHotkey=137750ms
+2026-02-10 00:54:54   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:54:54   -> firstPressTime set to 291910375
+2026-02-10 00:54:56 --- Key event fired ---
+2026-02-10 00:54:56   pressCount (before logic)=1
+2026-02-10 00:54:56   A_TickCount=291911500
+2026-02-10 00:54:56   firstPressTime=291910375
+2026-02-10 00:54:56   elapsed=1140ms
+2026-02-10 00:54:56   A_ThisHotkey=~p
+2026-02-10 00:54:56   A_PriorHotkey=~p
+2026-02-10 00:54:56   A_TimeSincePriorHotkey=1250ms
+2026-02-10 00:54:56   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:54:56   -> firstPressTime set to 291911562
+2026-02-10 00:54:56 --- Key event fired ---
+2026-02-10 00:54:56   pressCount (before logic)=1
+2026-02-10 00:54:56   A_TickCount=291911953
+2026-02-10 00:54:56   firstPressTime=291911562
+2026-02-10 00:54:56   elapsed=406ms
+2026-02-10 00:54:56   A_ThisHotkey=~p
+2026-02-10 00:54:56   A_PriorHotkey=~p
+2026-02-10 00:54:56   A_TimeSincePriorHotkey=468ms
+2026-02-10 00:54:56   -> INCREMENT branch: pressCount now=2 elapsed=406ms
+2026-02-10 00:54:56   -> Not triggered yet (need >=5, have 2)
+2026-02-10 00:55:07 --- Key event fired ---
+2026-02-10 00:55:07   pressCount (before logic)=2
+2026-02-10 00:55:07   A_TickCount=291923343
+2026-02-10 00:55:07   firstPressTime=291911562
+2026-02-10 00:55:07   elapsed=11797ms
+2026-02-10 00:55:07   A_ThisHotkey=~p
+2026-02-10 00:55:07   A_PriorHotkey=~p
+2026-02-10 00:55:07   A_TimeSincePriorHotkey=11454ms
+2026-02-10 00:55:07   -> RESET branch: pressCount was 2, setting to 1
+2026-02-10 00:55:07   -> firstPressTime set to 291923390
+2026-02-10 00:55:10 --- Key event fired ---
+2026-02-10 00:55:10   pressCount (before logic)=1
+2026-02-10 00:55:10   A_TickCount=291926078
+2026-02-10 00:55:10   firstPressTime=291923390
+2026-02-10 00:55:10   elapsed=2703ms
+2026-02-10 00:55:10   A_ThisHotkey=~p
+2026-02-10 00:55:10   A_PriorHotkey=~p
+2026-02-10 00:55:10   A_TimeSincePriorHotkey=2766ms
+2026-02-10 00:55:10   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:55:10   -> firstPressTime set to 291926125
+2026-02-10 00:55:11 --- Key event fired ---
+2026-02-10 00:55:11   pressCount (before logic)=1
+2026-02-10 00:55:11   A_TickCount=291927171
+2026-02-10 00:55:11   firstPressTime=291926125
+2026-02-10 00:55:11   elapsed=1062ms
+2026-02-10 00:55:11   A_ThisHotkey=~p
+2026-02-10 00:55:11   A_PriorHotkey=~p
+2026-02-10 00:55:11   A_TimeSincePriorHotkey=1141ms
+2026-02-10 00:55:11   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:55:11   -> firstPressTime set to 291927218
+2026-02-10 00:56:14 --- Key event fired ---
+2026-02-10 00:56:14   pressCount (before logic)=1
+2026-02-10 00:56:14   A_TickCount=291989625
+2026-02-10 00:56:14   firstPressTime=291927218
+2026-02-10 00:56:14   elapsed=62422ms
+2026-02-10 00:56:14   A_ThisHotkey=~p
+2026-02-10 00:56:14   A_PriorHotkey=~p
+2026-02-10 00:56:14   A_TimeSincePriorHotkey=62485ms
+2026-02-10 00:56:14   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:56:14   -> firstPressTime set to 291989671
+2026-02-10 00:56:15 --- Key event fired ---
+2026-02-10 00:56:15   pressCount (before logic)=1
+2026-02-10 00:56:15   A_TickCount=291990546
+2026-02-10 00:56:15   firstPressTime=291989671
+2026-02-10 00:56:15   elapsed=891ms
+2026-02-10 00:56:15   A_ThisHotkey=~p
+2026-02-10 00:56:15   A_PriorHotkey=~p
+2026-02-10 00:56:15   A_TimeSincePriorHotkey=984ms
+2026-02-10 00:56:15   -> INCREMENT branch: pressCount now=2 elapsed=922ms
+2026-02-10 00:56:15   -> Not triggered yet (need >=5, have 2)
+2026-02-10 00:56:16 --- Key event fired ---
+2026-02-10 00:56:16   pressCount (before logic)=2
+2026-02-10 00:56:16   A_TickCount=291991656
+2026-02-10 00:56:16   firstPressTime=291989671
+2026-02-10 00:56:16   elapsed=2016ms
+2026-02-10 00:56:16   A_ThisHotkey=~p
+2026-02-10 00:56:16   A_PriorHotkey=~p
+2026-02-10 00:56:16   A_TimeSincePriorHotkey=1188ms
+2026-02-10 00:56:16   -> RESET branch: pressCount was 2, setting to 1
+2026-02-10 00:56:16   -> firstPressTime set to 291991718
+2026-02-10 00:56:16 --- Key event fired ---
+2026-02-10 00:56:16   pressCount (before logic)=1
+2026-02-10 00:56:16   A_TickCount=291992078
+2026-02-10 00:56:16   firstPressTime=291991718
+2026-02-10 00:56:16   elapsed=375ms
+2026-02-10 00:56:16   A_ThisHotkey=~p
+2026-02-10 00:56:16   A_PriorHotkey=~p
+2026-02-10 00:56:16   A_TimeSincePriorHotkey=453ms
+2026-02-10 00:56:16   -> INCREMENT branch: pressCount now=2 elapsed=407ms
+2026-02-10 00:56:16   -> Not triggered yet (need >=5, have 2)
+2026-02-10 00:56:21 --- Key event fired ---
+2026-02-10 00:56:21   pressCount (before logic)=2
+2026-02-10 00:56:21   A_TickCount=291996546
+2026-02-10 00:56:21   firstPressTime=291991718
+2026-02-10 00:56:21   elapsed=4860ms
+2026-02-10 00:56:21   A_ThisHotkey=~p
+2026-02-10 00:56:21   A_PriorHotkey=~p
+2026-02-10 00:56:21   A_TimeSincePriorHotkey=4547ms
+2026-02-10 00:56:21   -> RESET branch: pressCount was 2, setting to 1
+2026-02-10 00:56:21   -> firstPressTime set to 291996609
+2026-02-10 00:56:41 --- Key event fired ---
+2026-02-10 00:56:41   pressCount (before logic)=1
+2026-02-10 00:56:41   A_TickCount=292017406
+2026-02-10 00:56:41   firstPressTime=291996609
+2026-02-10 00:56:42   elapsed=20828ms
+2026-02-10 00:56:42   A_ThisHotkey=~p
+2026-02-10 00:56:42   A_PriorHotkey=~p
+2026-02-10 00:56:42   A_TimeSincePriorHotkey=20907ms
+2026-02-10 00:56:42   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:56:42   -> firstPressTime set to 292017468
+2026-02-10 00:57:30 --- Key event fired ---
+2026-02-10 00:57:30   pressCount (before logic)=1
+2026-02-10 00:57:30   A_TickCount=292065531
+2026-02-10 00:57:30   firstPressTime=292017468
+2026-02-10 00:57:30   elapsed=48078ms
+2026-02-10 00:57:30   A_ThisHotkey=~p
+2026-02-10 00:57:30   A_PriorHotkey=~p
+2026-02-10 00:57:30   A_TimeSincePriorHotkey=48188ms
+2026-02-10 00:57:30   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:57:30   -> firstPressTime set to 292065593
+2026-02-10 00:57:31 --- Key event fired ---
+2026-02-10 00:57:31   pressCount (before logic)=1
+2026-02-10 00:57:31   A_TickCount=292067125
+2026-02-10 00:57:31   firstPressTime=292065593
+2026-02-10 00:57:31   elapsed=1563ms
+2026-02-10 00:57:31   A_ThisHotkey=~p
+2026-02-10 00:57:31   A_PriorHotkey=~p
+2026-02-10 00:57:31   A_TimeSincePriorHotkey=1656ms
+2026-02-10 00:57:31   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:57:31   -> firstPressTime set to 292067171
+2026-02-10 00:57:34 --- Key event fired ---
+2026-02-10 00:57:34   pressCount (before logic)=1
+2026-02-10 00:57:34   A_TickCount=292069781
+2026-02-10 00:57:34   firstPressTime=292067171
+2026-02-10 00:57:34   elapsed=2625ms
+2026-02-10 00:57:34   A_ThisHotkey=~p
+2026-02-10 00:57:34   A_PriorHotkey=~p
+2026-02-10 00:57:34   A_TimeSincePriorHotkey=2687ms
+2026-02-10 00:57:34   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:57:34   -> firstPressTime set to 292069828
+2026-02-10 00:57:41 --- Key event fired ---
+2026-02-10 00:57:41   pressCount (before logic)=1
+2026-02-10 00:57:41   A_TickCount=292077218
+2026-02-10 00:57:41   firstPressTime=292069828
+2026-02-10 00:57:41   elapsed=7406ms
+2026-02-10 00:57:41   A_ThisHotkey=~p
+2026-02-10 00:57:41   A_PriorHotkey=~p
+2026-02-10 00:57:41   A_TimeSincePriorHotkey=7500ms
+2026-02-10 00:57:41   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:57:41   -> firstPressTime set to 292077265
+2026-02-10 00:57:50 --- Key event fired ---
+2026-02-10 00:57:50   pressCount (before logic)=1
+2026-02-10 00:57:50   A_TickCount=292086031
+2026-02-10 00:57:50   firstPressTime=292077265
+2026-02-10 00:57:50   elapsed=8781ms
+2026-02-10 00:57:50   A_ThisHotkey=~p
+2026-02-10 00:57:50   A_PriorHotkey=~p
+2026-02-10 00:57:50   A_TimeSincePriorHotkey=8860ms
+2026-02-10 00:57:50   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:57:50   -> firstPressTime set to 292086093
+2026-02-10 00:58:15 --- Key event fired ---
+2026-02-10 00:58:15   pressCount (before logic)=1
+2026-02-10 00:58:15   A_TickCount=292111125
+2026-02-10 00:58:15   firstPressTime=292086093
+2026-02-10 00:58:15   elapsed=25047ms
+2026-02-10 00:58:15   A_ThisHotkey=~p
+2026-02-10 00:58:15   A_PriorHotkey=~p
+2026-02-10 00:58:15   A_TimeSincePriorHotkey=25125ms
+2026-02-10 00:58:15   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:58:15   -> firstPressTime set to 292111156
+2026-02-10 00:58:15 --- Key event fired ---
+2026-02-10 00:58:15   pressCount (before logic)=1
+2026-02-10 00:58:15   A_TickCount=292111281
+2026-02-10 00:58:15   firstPressTime=292111156
+2026-02-10 00:58:15   elapsed=140ms
+2026-02-10 00:58:15   A_ThisHotkey=~p
+2026-02-10 00:58:15   A_PriorHotkey=~p
+2026-02-10 00:58:15   A_TimeSincePriorHotkey=219ms
+2026-02-10 00:58:15   -> INCREMENT branch: pressCount now=2 elapsed=172ms
+2026-02-10 00:58:15   -> Not triggered yet (need >=5, have 2)
+2026-02-10 00:58:21 --- Key event fired ---
+2026-02-10 00:58:21   pressCount (before logic)=2
+2026-02-10 00:58:21   A_TickCount=292116812
+2026-02-10 00:58:21   firstPressTime=292111156
+2026-02-10 00:58:21   elapsed=5672ms
+2026-02-10 00:58:21   A_ThisHotkey=~p
+2026-02-10 00:58:21   A_PriorHotkey=~p
+2026-02-10 00:58:21   A_TimeSincePriorHotkey=5578ms
+2026-02-10 00:58:21   -> RESET branch: pressCount was 2, setting to 1
+2026-02-10 00:58:21   -> firstPressTime set to 292116875
+2026-02-10 00:58:24 --- Key event fired ---
+2026-02-10 00:58:24   pressCount (before logic)=1
+2026-02-10 00:58:24   A_TickCount=292119656
+2026-02-10 00:58:24   firstPressTime=292116875
+2026-02-10 00:58:24   elapsed=2796ms
+2026-02-10 00:58:24   A_ThisHotkey=~p
+2026-02-10 00:58:24   A_PriorHotkey=~p
+2026-02-10 00:58:24   A_TimeSincePriorHotkey=2891ms
+2026-02-10 00:58:24   -> RESET branch: pressCount was 1, setting to 1
+2026-02-10 00:58:24   -> firstPressTime set to 292119703

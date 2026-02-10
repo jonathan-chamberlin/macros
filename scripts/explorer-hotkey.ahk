@@ -29,18 +29,18 @@
     if !newWin
         return
     WinActivate(newWin)
-    Sleep 100
+    Sleep 300
     Send "^t"
-    Sleep 250
+    Sleep 500
     Send "!d"
-    Sleep 100
+    Sleep 200
     SendText "C:\Users\Jonathan Chamberlin\Downloads"
     Send "{Enter}"
-    Sleep 250
+    Sleep 500
     Send "^t"
-    Sleep 250
+    Sleep 500
     Send "!d"
-    Sleep 100
+    Sleep 200
     SendText "C:\Repositories for Git"
     Send "{Enter}"
 }

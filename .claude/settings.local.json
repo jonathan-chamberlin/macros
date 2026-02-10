@@ -16,7 +16,16 @@
       "Bash(do if [ -d \"$dir/.git\" ])",
       "Bash(git -C \"$dir\" log --since=\"2026-02-07 06:00\" --format=\"%h %s\" --all)",
       "Bash(fi)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(git rm:*)",
+      "Bash(code:*)",
+      "Bash(git -C \"$dir\" log --since=\"2026-02-08 06:00\" --format=\"%h %s\" --all)",
+      "Bash(bash:*)",
+      "Bash(git -C \"c:/Repositories for Git/macros\" status)",
+      "Bash(git -C \"c:/Repositories for Git/macros\" diff)",
+      "Bash(git -C \"c:/Repositories for Git/macros\" log --oneline -5)",
+      "WebFetch(domain:www.autohotkey.com)",
+      "Bash(find:*)"
     ]
   }
 }
