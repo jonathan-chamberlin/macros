@@ -26,6 +26,9 @@
       "Bash(git -C \"c:/Repositories for Git/macros\" log --oneline -5)",
       "WebFetch(domain:www.autohotkey.com)",
       "Bash(find:*)"
+      "Bash(*)",
+      "WebFetch(*)"
+      
     ]
   }
 }
