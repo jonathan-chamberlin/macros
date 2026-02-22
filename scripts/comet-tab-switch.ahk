@@ -1,7 +1,5 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
-#HotIf WinActive("ahk_exe comet.exe")
-RShift & Left::Send "^{PgUp}"
-RShift & Right::Send "^{PgDn}"
-#HotIf
+>+Left::Send "^+{Tab}"   ; Right Shift + Left Arrow = previous tab
+>+Right::Send "^{Tab}"   ; Right Shift + Right Arrow = next tab
