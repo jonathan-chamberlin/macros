@@ -11,7 +11,6 @@ local scripts = {
     "explorer-hotkey",
     "git-pull-macro",
     "move-browser-tab",
-    "smart-copy",
     "text-expansion",
     "website-hotkeys",
 }
