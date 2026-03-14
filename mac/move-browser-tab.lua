@@ -4,7 +4,8 @@
 
 local helpers = require("helpers")
 
-local watcher = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
+local M = {}
+M.watcher = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     local keyCode = event:getKeyCode()
     local flags = event:getFlags()
 
@@ -21,4 +22,5 @@ local watcher = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(even
     end
     return false
 end)
-watcher:start()
+M.watcher:start()
+return M

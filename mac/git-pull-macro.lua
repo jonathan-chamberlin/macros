@@ -4,7 +4,8 @@ local pressCount = 0
 local firstPressTime = 0
 local lastKey = ""
 
-local watcher = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
+local M = {}
+M.watcher = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     local char = event:getCharacters()
     local flags = event:getFlags()
 
@@ -56,4 +57,5 @@ local watcher = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(even
 
     return false
 end)
-watcher:start()
+M.watcher:start()
+return M
