@@ -1,6 +1,9 @@
 -- Cmd+C override: if nothing is selected, copy the entire current line instead
 
-hs.hotkey.bind({"cmd"}, "c", function()
+local hotkey = hs.hotkey.bind({"cmd"}, "c", function()
+    -- Disable self to prevent recursion
+    hotkey:disable()
+
     -- Save old clipboard
     local oldClip = hs.pasteboard.getContents()
 
@@ -18,8 +21,11 @@ hs.hotkey.bind({"cmd"}, "c", function()
                 hs.eventtap.keyStroke({"cmd"}, "c", 0)
                 hs.timer.doAfter(0.05, function()
                     hs.eventtap.keyStroke({"cmd"}, "right", 0) -- Move to end
+                    hotkey:enable()
                 end)
             end)
+        else
+            hotkey:enable()
         end
     end)
 end)
