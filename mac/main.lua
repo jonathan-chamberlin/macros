@@ -25,4 +25,10 @@ for _, name in ipairs(scripts) do
     end
 end
 
+-- Auto-reload config when any .lua file in the mac folder changes
+local watcher = hs.pathwatcher.new(scriptDir, function(files)
+    hs.reload()
+end)
+watcher:start()
+
 print("=== Hammerspoon config loaded ===")
