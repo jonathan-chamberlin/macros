@@ -1,4 +1,4 @@
--- Press 'p' 4 times within 1 second → deletes the p's, types "commit and push", sends Ctrl+Enter
+-- Press 'p' 4 times within 1 second → deletes the p's, types "commit and push", sends Enter
 
 local pressCount = 0
 local firstPressTime = 0
@@ -49,7 +49,7 @@ M.watcher = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
             hs.timer.doAfter(0.05, function()
                 hs.eventtap.keyStrokes("commit and push")
                 hs.timer.doAfter(0.05, function()
-                    hs.eventtap.keyStroke({"ctrl"}, "return", 0)
+                    hs.eventtap.keyStroke({}, "return", 0)
                 end)
             end)
         end)
