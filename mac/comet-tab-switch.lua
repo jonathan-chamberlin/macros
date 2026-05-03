@@ -1,5 +1,7 @@
 -- Right Option + [ = previous tab (Cmd+Shift+[)
 -- Right Option + ] = next tab (Cmd+Shift+])
+-- Left Option  + Z = previous tab (Cmd+Shift+[)
+-- Left Option  + X = next tab (Cmd+Shift+])
 
 local helpers = require("helpers")
 
@@ -14,6 +16,14 @@ M.watcher = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
                 hs.eventtap.keyStroke({"cmd", "shift"}, "[", 0)
                 return true
             elseif keyCode == 30 then -- ]
+                hs.eventtap.keyStroke({"cmd", "shift"}, "]", 0)
+                return true
+            end
+        elseif helpers.hasLeftAlt(event) then
+            if keyCode == 6 then -- Z
+                hs.eventtap.keyStroke({"cmd", "shift"}, "[", 0)
+                return true
+            elseif keyCode == 7 then -- X
                 hs.eventtap.keyStroke({"cmd", "shift"}, "]", 0)
                 return true
             end
