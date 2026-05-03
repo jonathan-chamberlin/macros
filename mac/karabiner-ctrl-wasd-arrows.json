@@ -1,0 +1,57 @@
+{
+    "title": "Left Control + WASD → Arrow Keys (left-hand arrow cluster)",
+    "rules": [
+        {
+            "description": "Left Control + W → Up",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "w",
+                        "modifiers": {"mandatory": ["left_control"]}
+                    },
+                    "to": [{"key_code": "up_arrow"}]
+                }
+            ]
+        },
+        {
+            "description": "Left Control + A → Left (overrides macOS start-of-line)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "a",
+                        "modifiers": {"mandatory": ["left_control"]}
+                    },
+                    "to": [{"key_code": "left_arrow"}]
+                }
+            ]
+        },
+        {
+            "description": "Left Control + S → Down",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "s",
+                        "modifiers": {"mandatory": ["left_control"]}
+                    },
+                    "to": [{"key_code": "down_arrow"}]
+                }
+            ]
+        },
+        {
+            "description": "Left Control + D → Right (overrides macOS forward-delete)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "d",
+                        "modifiers": {"mandatory": ["left_control"]}
+                    },
+                    "to": [{"key_code": "right_arrow"}]
+                }
+            ]
+        }
+    ]
+}
