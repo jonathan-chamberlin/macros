@@ -7,6 +7,7 @@ package.path = scriptDir .. "?.lua;" .. package.path
 
 local scripts = {
     "comet-tab-switch",
+    -- "desktop-switch",  -- handled by Karabiner-Elements (see mac/karabiner-desktop-switch.json)
     "commit-push-macro",
     "explorer-hotkey",
     "git-pull-macro",

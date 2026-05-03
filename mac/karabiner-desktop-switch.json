@@ -1,0 +1,45 @@
+{
+    "title": "Desktop Switching (Left Option + Q/W)",
+    "rules": [
+        {
+            "description": "Left Option + Q → Ctrl+Left (switch Space left)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "q",
+                        "modifiers": {
+                            "mandatory": ["left_option"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_arrow",
+                            "modifiers": ["left_control"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Left Option + W → Ctrl+Right (switch Space right)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "w",
+                        "modifiers": {
+                            "mandatory": ["left_option"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_arrow",
+                            "modifiers": ["left_control"]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
