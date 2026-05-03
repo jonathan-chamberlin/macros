@@ -1,0 +1,21 @@
+{
+    "title": "Caps Lock → Return (no caps toggle)",
+    "rules": [
+        {
+            "description": "Caps Lock → Return/Enter (Karabiner intercepts at HID layer so the OS never sees caps_lock and the caps state never toggles)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "return_or_enter"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
