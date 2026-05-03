@@ -27,8 +27,9 @@
       "WebFetch(domain:www.autohotkey.com)",
       "Bash(find:*)",
       "Bash(*)",
-      "WebFetch(*)"
-      
+      "WebFetch(*)",
+      "Bash(mkdir -p /Users/jonathanchamberlin/repos/macros/.claude/improve-artifacts)",
+      "Bash(rm -f /Users/jonathanchamberlin/repos/macros/.claude/improve-artifacts/*.md)"
     ]
   }
 }

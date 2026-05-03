@@ -1,9 +1,10 @@
 -- Allow CLI/AppleScript communication
 hs.allowAppleScript(true)
 
--- Add the mac scripts directory to Lua's search path
-local scriptDir = "/Users/jonathanchamberlin/repos/macros/mac/"
-package.path = scriptDir .. "?.lua;" .. package.path
+-- Absolute path to the mac scripts directory; Hammerspoon's cwd is not reliable
+-- so we anchor to the known repo location rather than using a relative path.
+local SCRIPT_DIR = "/Users/jonathanchamberlin/repos/macros/mac/"
+package.path = SCRIPT_DIR .. "?.lua;" .. package.path
 
 local scripts = {
     "comet-tab-switch",
@@ -45,10 +46,11 @@ local caffeinateWatcher = hs.caffeinate.watcher.new(function(event)
 end)
 caffeinateWatcher:start()
 
--- Auto-reload config when any .lua file in the mac folder changes
-local watcher = hs.pathwatcher.new(scriptDir, function(files)
+-- Auto-reload config when any .lua file in the mac folder changes.
+-- The `files` arg lists changed paths but we always do a full reload, so it is ignored.
+local fileWatcher = hs.pathwatcher.new(SCRIPT_DIR, function(_files)
     hs.reload()
 end)
-watcher:start()
+fileWatcher:start()
 
 print("=== Hammerspoon config loaded ===")
