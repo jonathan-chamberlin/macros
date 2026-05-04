@@ -1,4 +1,3 @@
--- Allow CLI/AppleScript communication
 hs.allowAppleScript(true)
 
 -- Absolute path to the mac scripts directory; Hammerspoon's cwd is not reliable
@@ -14,6 +13,7 @@ local scripts = {
     "git-pull-macro",
     "move-browser-tab",
     "new-terminal",
+    "tab-as-backspace",
     "text-expansion",
     "website-hotkeys",
 }

@@ -1,0 +1,30 @@
+{
+    "title": "` → Backspace, Ctrl+` → literal `",
+    "rules": [
+        {
+            "description": "Left Control + ` → literal ` (escape hatch — must come before the plain rule so it matches first)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "grave_accent_and_tilde",
+                        "modifiers": {"mandatory": ["left_control"]}
+                    },
+                    "to": [{"key_code": "grave_accent_and_tilde"}]
+                }
+            ]
+        },
+        {
+            "description": "` → Backspace (plain — Shift+` for ~, Option+`, Cmd+` etc. pass through unchanged)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "grave_accent_and_tilde"
+                    },
+                    "to": [{"key_code": "delete_or_backspace"}]
+                }
+            ]
+        }
+    ]
+}
