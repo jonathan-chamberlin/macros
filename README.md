@@ -16,6 +16,7 @@ Hammerspoon macros for macOS productivity. All scripts are launched via `mac/mai
 | `Right Option+]` | Next tab |
 | `Right Cmd+[` | Move tab left |
 | `Right Cmd+]` | Move tab right |
+| `Cmd+Option+R` | Toggle Meet recording (screen + mic + system audio) — see [mac/MEET-RECORDING-SETUP.md](mac/MEET-RECORDING-SETUP.md) for one-time audio setup |
 | `jc` + space/enter | Jonathan Chamberlin |
 | `eee` | jcham17x@gmail.com |
 | `;;date` | Today's date (MM/dd/yy) |

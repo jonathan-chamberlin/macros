@@ -11,6 +11,7 @@ local scripts = {
     "commit-push-macro",
     "explorer-hotkey",
     "git-pull-macro",
+    "meet-record",
     "move-browser-tab",
     "new-terminal",
     "tab-as-backspace",
