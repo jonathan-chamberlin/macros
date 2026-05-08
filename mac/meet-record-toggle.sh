@@ -58,10 +58,21 @@ OUT="$OUTDIR/meet-$(date +%Y%m%d-%H%M%S).mov"
 "$SWITCH" -c > "$PRIOR_OUTPUT_FILE" 2>/dev/null || true
 "$SWITCH" -s "Meet Output" >/dev/null 2>&1 || true
 
+# Meet Input is a 3-channel aggregate: ch0 = MacBook Pro Microphone,
+# ch1-2 = BlackHole 2ch (Meet's audio captured via the Multi-Output Device).
+# `-ac 2` would let ffmpeg pick a default 3-to-2 matrix that treats the input as
+# 2.1 (L, R, LFE) and drops/attenuates ch2, which silently strips one side of
+# the remote audio AND isolates the mic to the left channel only. Confirmed by
+# cross-correlation of meet-20260507-221838.mov where L-R ~= L+R, meaning the
+# channels carried independent signals instead of a real stereo mix.
+# Explicit pan filter: mic at 0.5 into both outputs (centered mono), BlackHole
+# preserved as stereo. Both speakers carry user voice + remote audio together.
 "$FFMPEG" -hide_banner -loglevel warning \
   -f avfoundation -framerate 30 -capture_cursor 1 -i "${SCREEN_IDX}:${AUDIO_IDX}" \
+  -filter_complex "[0:a]pan=stereo|c0=0.5*c0+c1|c1=0.5*c0+c2[aout]" \
+  -map 0:v -map "[aout]" \
   -c:v h264_videotoolbox -b:v 6M \
-  -c:a aac -b:a 192k -ac 2 \
+  -c:a aac -b:a 192k \
   -y "$OUT" \
   >"$LOGFILE" 2>&1 &
 

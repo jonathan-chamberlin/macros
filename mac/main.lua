@@ -6,6 +6,7 @@ local SCRIPT_DIR = "/Users/jonathanchamberlin/repos/macros/mac/"
 package.path = SCRIPT_DIR .. "?.lua;" .. package.path
 
 local scripts = {
+    "claude-social-iq",
     "comet-tab-switch",
     -- "desktop-switch",  -- handled by Karabiner-Elements (see mac/karabiner-desktop-switch.json)
     "commit-push-macro",
