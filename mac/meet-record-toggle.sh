@@ -15,9 +15,29 @@ LOGFILE="/tmp/meet-record.log"
 OUTDIR="$HOME/Desktop"
 FFMPEG="/opt/homebrew/bin/ffmpeg"
 SWITCH="/opt/homebrew/bin/SwitchAudioSource"
+RECORDING_OUTPUT="Meet Output"
+NORMAL_OUTPUT="MacBook Pro Speakers"
 
 notify() {
   /usr/bin/osascript -e "display notification \"$1\" with title \"Meet Recorder\"" >/dev/null 2>&1 || true
+}
+
+current_output() {
+  "$SWITCH" -t output -c 2>/dev/null || true
+}
+
+restore_output() {
+  local prior=""
+  if [ -f "$PRIOR_OUTPUT_FILE" ]; then
+    prior=$(cat "$PRIOR_OUTPUT_FILE")
+  fi
+
+  if [ -z "$prior" ] || [ "$prior" = "$RECORDING_OUTPUT" ]; then
+    prior="$NORMAL_OUTPUT"
+  fi
+
+  "$SWITCH" -t output -s "$prior" >/dev/null 2>&1 || true
+  rm -f "$PRIOR_OUTPUT_FILE"
 }
 
 # --- STOP path ---
@@ -29,12 +49,17 @@ if [ -f "$PIDFILE" ] && kill -0 "$(cat "$PIDFILE")" 2>/dev/null; then
     sleep 0.1
   done
   rm -f "$PIDFILE"
-  if [ -f "$PRIOR_OUTPUT_FILE" ]; then
-    PRIOR=$(cat "$PRIOR_OUTPUT_FILE")
-    [ -n "$PRIOR" ] && "$SWITCH" -s "$PRIOR" >/dev/null 2>&1 || true
-    rm -f "$PRIOR_OUTPUT_FILE"
-  fi
+  restore_output
   notify "Stopped — file saved to Desktop"
+  exit 0
+fi
+
+# If recording died or the pidfile was removed while audio stayed on the
+# multi-output recording route, treat the next toggle as recovery.
+if [ "$(current_output)" = "$RECORDING_OUTPUT" ]; then
+  rm -f "$PIDFILE"
+  restore_output
+  notify "Restored audio output to $NORMAL_OUTPUT"
   exit 0
 fi
 
@@ -55,8 +80,8 @@ fi
 OUT="$OUTDIR/meet-$(date +%Y%m%d-%H%M%S).mov"
 
 # Remember whatever output device is active right now so we can restore on stop.
-"$SWITCH" -c > "$PRIOR_OUTPUT_FILE" 2>/dev/null || true
-"$SWITCH" -s "Meet Output" >/dev/null 2>&1 || true
+"$SWITCH" -t output -c > "$PRIOR_OUTPUT_FILE" 2>/dev/null || true
+"$SWITCH" -t output -s "$RECORDING_OUTPUT" >/dev/null 2>&1 || true
 
 # Meet Input is a 3-channel aggregate: ch0 = MacBook Pro Microphone,
 # ch1-2 = BlackHole 2ch (Meet's audio captured via the Multi-Output Device).
@@ -83,6 +108,7 @@ echo "$PID" > "$PIDFILE"
 sleep 1
 if ! kill -0 "$PID" 2>/dev/null; then
   rm -f "$PIDFILE"
+  restore_output
   notify "ERROR — ffmpeg failed. See /tmp/meet-record.log"
   exit 1
 fi
